@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Welcome } from "~/components/Welcome/Welcome";
 import { ColorSchemeToggle } from "~/components/ColorSchemeToggle/ColorSchemeToggle";
+import { Button } from "@mantine/core";
+import { Link } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -12,7 +13,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div>
-      <Welcome />
+      <Button><Link to={'/Demo'} prefetch="intent">Demo</Link></Button>
       <ColorSchemeToggle />
     </div>
   );

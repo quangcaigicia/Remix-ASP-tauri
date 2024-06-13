@@ -8,9 +8,11 @@
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "tauri": "tauri"
   },
   "dependencies": {
+    "@mantine/charts": "^7.10.1",
     "@mantine/core": "7.10.0",
     "@mantine/hooks": "7.10.0",
     "@remix-run/node": "^2.8.1",
@@ -18,23 +20,27 @@
     "@remix-run/serve": "^2.8.1",
     "isbot": "^5.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "recharts": "2"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.8.1",
+    "@tauri-apps/cli": "^2.0.0-beta.20",
     "@types/react": "^18.2.65",
     "@types/react-dom": "^18.2.21",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
+    "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.34.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "postcss": "^8.4.35",
+    "postcss": "^8.4.38",
     "postcss-preset-mantine": "1.15.0",
     "postcss-simple-vars": "^7.0.1",
+    "tailwindcss": "^3.4.4",
     "typescript": "^5.4.2",
     "vite": "^5.1.6",
     "vite-tsconfig-paths": "^4.3.1"
